@@ -25,6 +25,11 @@ pca2 = zip(*X_transform)[1]
 
 color_dict={}
 color_dict["Iris-sentosa"]="green"
-color_dict["Iris-versicolor"]="green"
-color_dict["Iris-verginica"]="green"
+color_dict["Iris-versicolor"]="red"
+color_dict["Iris-verginica"]="blue"
+
+for label in labels:
+    plt.scatter(pca1[i],pca2[i],color=color_dict)
+
+plt.show()
 
